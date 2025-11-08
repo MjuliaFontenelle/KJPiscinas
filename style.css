@@ -1,0 +1,184 @@
+/* === Estilo geral === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #F4F9FB;
+  color: #004E7C;
+  scroll-behavior: smooth;
+}
+
+/* Header */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  z-index: 1000;
+}
+
+.header a {
+  color: #004E7C;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 600;
+}
+
+.logo {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5em;
+}
+
+/* Hero */
+.hero {
+  background: url('agua-cristalina.jpg') center/cover no-repeat;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero-text {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 40px;
+  border-radius: 12px;
+}
+
+.btn-cta {
+  background: #00AEEF;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+/* Seções */
+section {
+  padding: 100px 20px 60px;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  color: #004E7C;
+  margin-bottom: 20px;
+}
+
+.servico {
+  width: 300px;
+  margin: 15px;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: #f0f9ff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.servico h3 {
+  color: #004e7c;
+}
+
+/* Antes e Depois */
+.imagens-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.imagem {
+  width: 45%;
+}
+
+.imagem img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.servicos-container {
+  display: flex;
+  justify-content: center; /* centraliza os cards na página */
+  align-items: flex-start;
+  flex-wrap: wrap; /* faz os cards quebrarem linha no mobile */
+  gap: 20px; /* espaçamento entre os cards */
+  margin-top: 40px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  width: 280px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+
+/* Diferenciais */
+.diferenciais ul {
+  list-style: none;
+  padding: 0;
+}
+
+.diferenciais li {
+  font-size: 1.1em;
+  margin: 10px 0;
+}
+
+/* Rodapé */
+.footer {
+  background: #004E7C;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.icone-whatsapp-float {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  background: #25D366;
+  bottom: 25px;
+  right: 25px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+
+
+
